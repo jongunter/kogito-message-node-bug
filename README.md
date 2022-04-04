@@ -1,4 +1,4 @@
-# kogito-avro-bug Project
+# Kogito message node bug
 This repo is a demo of an issue I've been experiencing with BPM Messaging Nodes in Kogito/Quarkus
 
 ## Description of issue
