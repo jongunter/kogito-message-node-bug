@@ -97,29 +97,6 @@
           </systemPropertyVariables>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.apache.avro</groupId>
-        <artifactId>avro-maven-plugin</artifactId>
-        <version>1.11.0</version>
-        <executions>
-          <execution>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>schema</goal>
-            </goals>
-            <configuration>
-              <sourceDirectory>src/main/avro/</sourceDirectory>
-
-              <!-- This seems to be the source of the problem -->
-              <!-- Not the default recommended on https://avro.apache.org/docs/current/gettingstartedjava.html,
-              but it used by some projects -->
-              <outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
-
-              <stringType>String</stringType>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
   <profiles>
